@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - funky_base (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - funky_base (from `.symlinks/plugins/funky_base/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  funky_base:
+    :path: ".symlinks/plugins/funky_base/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  funky_base: 0a4e13d295df79df979854f31d8e0c6910eacdf2
+
+PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
+
+COCOAPODS: 1.6.1
