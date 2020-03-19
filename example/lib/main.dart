@@ -41,33 +41,33 @@ class PageState extends BasePageState<Page> {
             children: <Widget>[
               RaisedButton(
                   onPressed: () {
-                    FunkyBase.test(1).then((version) {
-                      print('1 $version');
-                    });
+//                    FunkyBase.test(1).then((version) {
+//                      print('1 $version');
+//                    });
                   }),
               RaisedButton(
                   onPressed: () {
-                    FunkyBase.test(1).then((version) {
-                      print('2 $version');
-                    });
+//                    FunkyBase.test(1).then((version) {
+//                      print('2 $version');
+//                    });
                   }),
               RaisedButton(
                   onPressed: () {
-                    FunkyBase.test(1).then((version) {
-                      print('3 $version');
-                    });
+//                    FunkyBase.test(1).then((version) {
+//                      print('3 $version');
+//                    });
                   }),
               RaisedButton(
                   onPressed: () {
-                    FunkyBase.test(2).then((version) {
-                      print('4 $version');
-                    });
+//                    FunkyBase.test(2).then((version) {
+//                      print('4 $version');
+//                    });
                   }),
               RaisedButton(
                   onPressed: () {
-                    FunkyBase.test(2).then((version) {
-                      print('5 $version');
-                    });
+//                    FunkyBase.test(2).then((version) {
+//                      print('5 $version');
+//                    });
                   }),
             ],
           ),
