@@ -2,7 +2,6 @@ import 'package:broadcast_manager/broadcast_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:funky_base/src/base/exceptions.dart';
 import 'package:funky_base/src/core/page_manager.dart';
-import 'package:happypass/happypass.dart';
 import 'package:taskpipeline/taskpipeline.dart';
 
 /// 页面基类
@@ -148,8 +147,6 @@ class PageInterface<T extends State> {
 	T _state;
 	final TaskPipeline taskPipeline = TaskPipeline();
 	
-	final RequestCloser pageCloser = RequestCloser();
-	
 	BroadcastManager _broadcastManager;
 	BroadcastManager get broadcastManager => _broadcastManager ??= BroadcastManager();
 	
@@ -158,7 +155,6 @@ class PageInterface<T extends State> {
 	
 	void _destroy() {
 		PageManager.getInstance().unregisterState(_state);
-		pageCloser.close();
 		taskPipeline.destroy();
 		_state = null;
 	}

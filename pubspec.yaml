@@ -1,6 +1,6 @@
 name: funky_base
 description: base for develop
-version: 0.0.1
+version: 0.0.2
 author: CimZzz <1152564696@qq.com>
 homepage: https://github.com/CimZzz/funky_base.git
 
@@ -11,7 +11,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-  happypass: ^1.1.1
   taskpipeline: ^0.0.3
   tea: ^1.0.2
   broadcast_manager: ^1.0.0
