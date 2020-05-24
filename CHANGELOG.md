@@ -10,3 +10,7 @@
 
 - allow expand `PageInterface`
 - build -> doBuild
+
+## 0.0.4
+
+- Upgrade BroadcastManager 1.0.0 => 1.0.1 
