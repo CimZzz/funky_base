@@ -1,7 +1,6 @@
 name: funky_base
 description: base for develop
-version: 0.0.2
-author: CimZzz <1152564696@qq.com>
+version: 0.0.3
 homepage: https://github.com/CimZzz/funky_base.git
 
 environment:

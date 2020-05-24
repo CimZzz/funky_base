@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:broadcast_manager/broadcast_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:funky_base/src/base/exceptions.dart';
@@ -48,6 +50,10 @@ abstract class BasePageWithInterfaceState<T extends BasePage, E extends PageInte
 	/// 重载构造 Widget 方法
 	@override
 	Widget build(BuildContext context) {
+		return doBuild(context);
+	}
+	
+	Widget doBuild(BuildContext context) {
 		final pageRootWidget = onBuildUI(context);
 		if (pageRootWidget is! Scaffold) {
 			throw const WidgetNotScaffoldException();
@@ -67,7 +73,7 @@ abstract class BasePageWithInterfaceState<T extends BasePage, E extends PageInte
 	}
 	
 	/// 构造 PageInterface 回调
-	PageInterface createPageInterface() => PageInterface._(this, PageBundle());
+	PageInterface createPageInterface() => PageInterface(this, PageBundle());
 	
 	/// 构造UI方法
 	Widget onBuildUI(BuildContext context);
@@ -140,7 +146,7 @@ class PageBundle {
 /// 页面接口类
 /// 封装了关于页面的操作
 class PageInterface<T extends State> {
-	PageInterface._(T state, PageBundle pageBundle) : _state = state {
+	PageInterface(T state, PageBundle pageBundle) : _state = state {
 		PageManager.getInstance().registerState(state);
 	}
 	

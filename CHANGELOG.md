@@ -5,3 +5,8 @@
 ## 0.0.2
 
 * remove happypass
+
+## 0.0.3
+
+- allow expand `PageInterface`
+- build -> doBuild
