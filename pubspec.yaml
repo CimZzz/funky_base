@@ -1,6 +1,6 @@
 name: funky_base
 description: base for develop
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/CimZzz/funky_base.git
 
 environment:
@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  taskpipeline: ^0.0.3
+  taskpipeline: ^0.0.4
   tea: ^1.0.2
   broadcast_manager: ^1.0.1
 
